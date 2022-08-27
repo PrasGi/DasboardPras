@@ -9,13 +9,16 @@
     <!-- Bootsrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- css mw -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="Home">
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #7917f9">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" data-aos="fade-down" style="background-color: #7917f9">
       <div class="container">
         <a class="navbar-brand" href="#">Prasetyo Putra Pratama</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +48,7 @@
     <!-- Jumbotron -->
 
     <section class="jumbotron text-center">
-      <img src="img/Profile.jpg" alt="Prasetyo Putra Pratama" width="150px" class="rounded-circle img-thumbnail" />
+      <img src="img/Profile.jpg" alt="Prasetyo Putra Pratama" width="150px" class="rounded-circle img-thumbnail" data-aos="flip-right" data-aos-duration="1500" />
       <h1 class="display-4">Prasetyo Putra Pratama</h1>
       <p class="lead">Junior Programing | Back End Developer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -70,7 +73,7 @@
         </div>
 
         <div class="row justify-content-center fs-6 text-center">
-          <div class="col-4">
+          <div class="col-4" data-aos="zoom-in">
             <p>I studied the backend especially in the Java language, and I also studied the front end although only partially, I am a person who focuses on one goal</p>
           </div>
         </div>
@@ -96,28 +99,28 @@
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row asd">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out">
               <img src="img/p1.png" class="card-img-top" alt="Project 1" />
               <div class="card-body text-center">
-                <p class="card-text">Medic Application with java</p>
+                <p class="card-text"><a href="https://github.com/PrasGi/Aplication-Medic">Medic Application with java</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out">
               <img src="img/p2.png" class="card-img-top" alt="Project 1" />
               <div class="card-body text-center">
-                <p class="card-text">Todo List Application with java</p>
+                <p class="card-text"><a href="https://github.com/PrasGi/Aplication-TodoListV3">Todo List Application with java</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out">
               <img src="img/p3.png" class="card-img-top" alt="Project 1" />
               <div class="card-body text-center">
-                <p class="card-text">Link Class Application with HTML & CSS</p>
+                <p class="card-text"><a href="https://github.com/PrasGi/AsterLinkClass">Class Application with HTML & CSS</a></p>
               </div>
             </div>
           </div>
@@ -133,6 +136,46 @@
     </section>
 
     <!-- end Projects -->
+
+    <!-- Website suport -->
+
+    <section class="website-suport text-center ">
+      <div class="">
+        <h2>Website Suport</h2>
+      </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">aos</h5>
+                <p class="card-text">Animation library for website</p>
+                <a href="https://michalsnik.github.io/aos/" class="btn btn-dark">Go Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Bootstrapp</h5>
+                <p class="card-text">Get Documention for Botstrapp framework</p>
+                <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" class="btn btn-dark">Go Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Sass</h5>
+                <p class="card-text">Get Documention for SASS</p>
+                <a href="https://sass-lang.com/" class="btn btn-dark">Go Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end Website suport -->
 
     <!-- Contact -->
 
@@ -191,6 +234,13 @@
     <!-- end Futter -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwYcr3D7afbo1KVCHCchurebzec5wMwmcTz2Uk1Wra7Kb5oxesdKQYYlW3xbIhBy2o/exec";

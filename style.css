@@ -13,6 +13,7 @@ footer {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 i {
@@ -21,4 +22,32 @@ i {
 
 section {
   padding-top: 5rem;
+}
+
+/* section.tengah {
+  text-align: center;
+} */
+
+.card {
+  margin-top: 20px;
+  margin-left: 2rem;
+  background-color: #7917f9;
+  color: white;
+}
+
+.btn {
+  margin-top: 3px;
+}
+
+.dream {
+  padding-top: 90px;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+#Projects .asd .card a:hover {
+  color: white;
+  font-size: 17px;
 }
